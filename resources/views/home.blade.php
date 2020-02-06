@@ -8,16 +8,16 @@
         </div>
         <div class="col-9 pt-5">
             <div>
-                <h1>ccarlson</h1>
+                <h1>{{$user->username}}</h1>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>153</strong> posts</div>
                 <div class="pr-5"><strong>23k</strong> followers</div>
                 <div class="pr-5"><strong>212</strong> following</div>
             </div>
-            <div class='pt-4'><strong>Chris Carlson</strong></div>
-            <div>Cray coloring book letterpress pour-over intelligentsia gluten-free. Salvia plaid cardigan pug YOLO scenester.</div>
-            <div><a href="http://www.christophermcarlson.com">christophermcarlson.com</a></div>
+        <div class='pt-4'><strong>{{$user->profile->title}}</strong></div>
+        <div>{{$user->profile->description}}</div>
+        <div><a href="http://www.christophermcarlson.com">{{$user->profile->url}}</a></div>
         </div>
     </div>
 
